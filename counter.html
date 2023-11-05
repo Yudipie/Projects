@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            counter
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            let counter =0;
+            function count(){
+                counter++;  
+                // alert(counter);
+                document.querySelector('h1').innerHTML = counter;
+
+                // if(counter % 10 == 0)
+                //    alert(`count is now ${counter}`);
+            }
+                document.addEventListener('DOMContentLoaded', function(){
+                    
+                    document.querySelector('#watch').onclick = function() {
+                        const intervalid = setInterval(count , 1000);
+
+                    document.querySelector('#stop').onclick = function() {
+                        clearInterval(intervalid);
+
+                    document.querySelector('#reset').onclick = function() {
+                        counter = 0;
+                        document.querySelector('h1').innerHTML = counter;
+                    }    
+                    }    
+                    }
+                });   
+
+        </script>
+        <style>
+            button:hover {
+                background-color: black;
+            }
+
+            @media (min-width: 600px){
+                body {
+                    background-color: aqua;
+                }
+            }
+
+            @media (max-width: 599px){
+                body {
+                    background-color: ;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            0
+        </h1>
+        <div style="padding-left: 20px;">
+            <button onclick="count()" id="watch" style="color: blue;">Start stopwatch</button>
+        </div>     
+        <div style="padding: 20px;">
+            <button id="stop" style="color: red;">Stop</button>
+        </div>   
+        <div style="padding-left: 20px;">
+            <button id="reset" style="color: chartreuse;">Reset</button>
+        </div>
+    </body>
+</html>
