@@ -1,0 +1,44 @@
+body{
+    background-color: #000000;
+    color: white;
+    font-size: large;
+}
+
+#subscribe{
+    cursor: pointer;
+    border-radius: 45px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rps{
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50px;
+    border-color: white;
+}
+
+.image{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+#reset,#auto{
+    border-radius: 50px;
+    border-color: white;
+    color: white;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    outline: none;
+    cursor: pointer;
+}
