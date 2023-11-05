@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+</head>
+<body>
+    <h1 id="head1">To-Do-list</h1>
+
+    <div id="input">
+        <input type="text" id="taskinput" placeholder="Enter Task">
+        <input type="date" id="deadline">
+        <button id="add" onclick=addtask()>Add Task</button>
+    </div>
+    <p>High Priority Tasks</p>
+    <div id="high">
+        <ol id="highlist"></ol>
+    </div>
+    <p>Low Priority Tasks</p>
+    <div id="low">
+        <ul id="lowlist">
+        </ul>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
